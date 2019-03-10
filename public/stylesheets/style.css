@@ -1,0 +1,215 @@
+
+
+body {
+  padding: 5px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #371234;
+  font: color: red;
+
+}
+
+head{
+  padding: 5px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: purple;
+  font: color: red;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+.lefty{
+  margin-left: 400px;
+}
+
+input {
+  color: #00B7FF;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: purple;
+
+  margin-left: 15px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 40px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+ }
+
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 25px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+ }
+
+.item2 { grid-area: top; }
+.item3 { grid-area: head; }
+.item4 { grid-area: lef; }
+.item5 { grid-area: footer;}
+.item6 { grid-area: left2;}
+.item7 { grid-area: right2;}
+.item8 { grid-area: add1;}
+.item9 { grid-area: add2;}
+.item10 { grid-area: add3;}
+.item11 { grid-area: add4;}
+
+
+
+/*Top*/
+.grid-container-top {
+  display: grid;
+  grid-template-areas:
+    'top top top top top top'  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+  padding: 10px;
+}
+.grid-container-top > div {
+  background-color: rgba(0, 0, 0, 4);
+  color: darkkhaki;
+  text-align: center;
+  padding: 10px 0;
+    font-size: 30px;
+
+}
+
+/*One*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'head head head head head head'  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: rgba(0, 0, 0, 4);
+  color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+    font-size: 24px;
+  }
+
+/*Two*/
+.grid-container-two {
+  display: grid;
+  grid-template-areas:
+ 'lef lef lef footer footer footer';
+  grid-gap: 5px;
+  background-color: #30123b;
+  padding: 5px;
+}
+.grid-container-two > div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+  color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+/*Three*/
+.grid-container-three {
+  display: grid;
+  grid-template-areas:
+ 'left2 left2 left2 right2 right2 right2'  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-three> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+/*Four*/
+.grid-container-four {
+  display: grid;
+  grid-template-areas:
+ 'add3 add3 add3 add4 add4 add4'
+  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-four> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 40px;
+  color = "white';
+
+}
+
+
+/*Five*/
+.grid-container-five {
+  display: grid;
+  grid-template-areas:
+ 'add1 add1 add1 add1 add1 add1'
+  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-five> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 40px;
+  color = "white';
+
+}
+
+
+/*six*/
+.grid-container-six {
+  display: grid;
+  grid-template-areas:
+ 'add2 add2 add2 add2 add2 add2'
+  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-six> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 40px;
+  color = "white';
+
+}
