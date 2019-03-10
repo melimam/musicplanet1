@@ -1,0 +1,65 @@
+<html font color="red">
+
+<head>
+  <title>Music View</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+      <div class="grid-container-top">
+                  <div class="item2">
+               <img src="/images/concert.png" alt="concert">
+                  </div>
+               </div>
+               <div class="grid-container">
+                  <div class="item3">
+                    <h1>MUSIC PLANET</h1>
+                    <h4>a Group 5 Company</h4>
+                  </div>
+               </div>
+<center>
+
+  <script>
+    $(document).ready(function(){
+
+        +$.getJSON("http://localhost:3000/api/v1/music/all", (result)=>{
+          $.each(result, (i, field) =>      {
+
+            var title = field.name
+             +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+              +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+
+            +"Artist: "
+               + field.artist
+                 +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+                  +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+            +"Year: "
+             + field.year
+              +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+               +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+            +"Genre: "
+             + field.genre
+              +"<br /><br /> "
+               + "</div>";
+          $("#list").append(title);
+          });
+          $('.film').on('click', function(){
+            if ($(this).children('.info').is(':hidden')){
+              $('.info').hide();
+              $(this).children('.info').show();
+            } else {
+              $(this).children('.info').hide();
+            }
+          });
+        });
+      });
+  </script>
+</center>
+</head>
+
+<body font color="khaki">
+  <h1><center><font color="khaki">SONGS</font></center></h1>
+<h3><font color="khaki"><div class="lefty" id='list'></div></font></h3>
+</font></body>
+
+</html>
